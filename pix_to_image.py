@@ -1,7 +1,7 @@
 from PIL import Image
 
 # Read pixel data from the file
-with open('jpg', 'r') as file:
+with open('pix.txt', 'r') as file:
     lines = file.readlines()
 # Convert the pixel data to a list of tuples
 pixels = [tuple(map(int, line.strip().split())) for line in lines]
